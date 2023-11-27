@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Freelancer</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <!-- Navbar -->
+        <div class="container">
+            <nav class="d-flex justify-content-between p-2">
+                <a href="#">Portfolio</a>
+                <a href="#">CONTACT ME</a>
+            </nav>
+        </div>
+    </header>
+    <!-- /header -->
+
+    <!-- main -->
+    <main>
+        <!-- Section user -->
+        <section class="bg-custom py-4">
+            <div class="container d-flex justify-content-center">
+                <div class="jumbo">
+                    <img class="img-fluid" src="./assets/img/undraw_profile_pic_ic5t.svg" alt="user-image">
+                    <div class="jumbo-info text-center">
+                        <h1>Pinco Pallo</h1>
+                        <p class="text-uppercase">Web Designer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section portfolio -->
+        <section class="py-4">
+            <div class="container">
+                <h2 class="fw-normal text-uppercase text-center pb-3">Portfolio</h2>
+                <div class="row gy-5">
+                    <!-- Cabin card -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="./assets/img/cabin.png" class="card-img-top" alt="cabin">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Cabin Website</h5>
+                                <button type="button" class="btn btn-info">Preview</button>
+                                <button type="button" class="btn btn-outline-info">Visit site</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cake card -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="./assets/img/cake.png" class="card-img-top" alt="cake">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Cake Website</h5>
+                                <button type="button" class="btn btn-info">Preview</button>
+                                <button type="button" class="btn btn-outline-info">Visit site</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Circus card -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="./assets/img/circus.png" class="card-img-top" alt="circus">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Circus Website</h5>
+                                <button type="button" class="btn btn-info">Preview</button>
+                                <button type="button" class="btn btn-outline-info">Visit site</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Game card -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="./assets/img/game.png" class="card-img-top" alt="game">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Game Website</h5>
+                                <button type="button" class="btn btn-info">Preview</button>
+                                <button type="button" class="btn btn-outline-info">Visit site</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Safe card -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="./assets/img/safe.png" class="card-img-top" alt="safe">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Safe Website</h5>
+                                <button type="button" class="btn btn-info">Preview</button>
+                                <button type="button" class="btn btn-outline-info">Visit site</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submarine card -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="./assets/img/submarine.png" class="card-img-top" alt="submarine">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Submarine Website</h5>
+                                <button type="button" class="btn btn-info">Preview</button>
+                                <button type="button" class="btn btn-outline-info">Visit site</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section form -->
+        <section class="bg-custom py-4">
+            <div class="container">
+                <h2 class="fw-normal text-uppercase text-center pb-3">Want an offer?</h2>
+                <form class="row g-3 justify-content-center">
+                    <!-- First name -->
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+
+                    <!-- Last name -->
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+
+                    <!-- Hours -->
+                    <div class="col-md-6">
+                        <label for="hours" class="form-label">Hours Requested</label>
+                        <input type="text" class="form-control" id="hours" required>
+                    </div>
+
+                    <!-- Type of work -->
+                    <div class="col-md-6">
+                        <label for="typeOfWork" class="form-label">Type of work</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected disabled>Select the type of work</option>
+                            <option value="1">Backed Development</option>
+                            <option value="2">Frontend Development</option>
+                            <option value="3">Project Analisys</option>
+                        </select>
+                    </div>
+
+                    <!-- Discount code -->
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Discount Code</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+
+                    <!-- Message area -->
+                    <div class="col-md-12">
+                        <label for="name" class="form-label">Message</label>
+                        <textarea class="form-control" placeholder="Specify your work commission..."
+                            id="floatingTextarea"></textarea>
+                    </div>
+
+                    <div class="col-md-1">
+                        <button type="submit" class="btn btn-warning">Send</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- /main -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="d-flex flex-column align-items-center pt-4">
+                <h3 class="text-secondary fw-normal text-uppercase">Location</h3>
+                <p>2215 John Daniel Drive Clark, MO 65243</p>
+                <p>Copyright &copy; Your Website 2021</p>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
