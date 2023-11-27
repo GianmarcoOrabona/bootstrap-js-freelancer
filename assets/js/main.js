@@ -25,7 +25,29 @@ function getPrice(event) {
     console.log(`Type Of Work: ${typeOfWork}`);
 
     // Codice sconto
-    let discountCode = document.getElementById('discount').value;
-    console.log(`Discount code: ${discountCode}`);
+    let inputDiscountCode = document.getElementById('discount').value;
+    console.log(`Discount code: ${inputDiscountCode}`);
+
+    // Calcolo il prezzo in base al lavoro e alle ore
+    if (hours && typeOfWork == 'backend') {
+        console.log('Ecco il tuo prezzo: ' + (backendPrice * hours).toFixed(2));
+    } else if (hours && typeOfWork == 'frontend') {
+        console.log('Ecco il tuo prezzo: ' + (frontendPrice * hours).toFixed(2))
+    } else if (hours && typeOfWork == 'analysis') {
+        console.log('Ecco il tuo prezzo: ' + (projectAnalysis * hours).toFixed(2))
+    } else {
+        console.log('Inserisci il numero di ore');
+    }
+
+    /* let usedDiscountCode = [];
+
+    discountCode.forEach(function (element, index) {
+        if (inputDiscountCode == discountCode[index]) {
+            usedDiscountCode.push(discountCode[index])
+            console.log('Sconto del 25%')
+        } else {
+            console.log('Inserisci un codice valido!')
+        }
+    }); */
 
 };
